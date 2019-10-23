@@ -1,0 +1,187 @@
+/*---------------------------------------------------------------------------*
+ * Ticket
+----------------------------------------------------------------------------*/
+// Colores
+$c_borde_punteado : #ceddf8;
+$c_fondo_barras   : #4380c6;
+$c_fondo_total    : #f6f6f6;
+$c_fondo_tiempo   : #e1ebfc;
+
+// Estilos
+.Ticket, .Ticket * {
+  box-sizing: border-box;
+}
+.Ticket {
+  // border: 2px dashed $c_borde_punteado;
+  display: none;
+  clear: both;
+  float: none;
+  margin: 0;
+  overflow: hidden;
+  margin-bottom: 21px;
+  &.is-visible {
+    display: block;
+  }
+
+  // --------------------------------------------------------------------------*
+  // Estilos para todas las entidades
+  // --------------------------------------------------------------------------*
+  .strong {
+    &.bold {
+      font-weight: $w_bold;
+    }
+    &.blue {
+      color: $c_texto_base_azul;
+    }
+  }
+  .blue {
+    color: $c_texto_base_azul;
+  }
+  &-title {
+    color: #000;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 21px;
+    text-align: center;
+    margin-top: 21px;
+    font-family: "Anton";
+    text-shadow: 0 0 1px #FFF;
+  }
+
+  &-guia {
+    color: $c_texto_base;
+    margin-bottom: 10px;
+    span{
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0px 4px;
+    }
+    p{
+      font-size: 18px;
+      color: #404040;
+      margin:0;
+    }
+    a{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-content {
+    display: block;
+    width: 100%;
+    a{
+      white-space: nowrap;
+      font-weight: 600;
+      background: black;
+      color: white;
+      padding: 5px;
+      font-size: 16px;
+      -moz-transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-box-shadow: 0 0 1px transparent;
+      box-shadow: 0 0 1px transparent;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition: transform .3s;
+      -o-transition: transform .3s;
+      transition: transform .3s;
+      line-height: 20px;
+      white-space: nowrap;
+      // float: right;
+      &:hover{
+        color: white;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+      &:visited{
+        color: white;
+      }
+      &:focus{
+        color: white;
+      }
+    }
+    a.bg-transparent{
+      background: transparent;
+    }
+    img{
+      width: 350px;
+      float: left;
+      margin-right: 2rem;
+      border: 1px solid #000;
+      padding: 14px;
+    }
+    h3{
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.5;
+      margin: 0;
+      margin-bottom: 14px;
+      span{
+        max-width: 300px;
+        display: inline-block;
+      }
+    }
+    .row{
+      width:100%;
+      float: none;
+      display: block;
+    }
+    @include breakpoint(tablet) {
+      .row{
+        width:50%;
+        float: left;
+        display: inline-block;
+        padding: 0 1rem;
+      }
+      h3{
+        font-size: 21px;
+        font-weight: 500;
+        // clear:both;
+        span{
+          max-width: 260px;
+          display: inline-block;
+        }
+      }
+    }
+    @include breakpoint(desktop) {
+      h3{
+        span{
+          max-width: 300px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.ProcedimientoPago{
+  .col-right{
+    width: 45%;
+    float: right;
+    clear: both;
+  }
+  .col-left{
+    width: 45%;
+    box-sizing: content-box;
+    float: left;
+  }
+  hr{
+    height: 56vh;
+    border: none;
+    border-right-width: medium;
+    border-right-style: none;
+    border-right-color: currentcolor;
+    border-right: 1px solid hsla(200, 10%, 50%,100);
+    width: 1px;
+    float: right;
+    margin-right: 3rem;
+  }
+}
+
+/*---------------------------------------------------------------------------*
+ * Fin:Ticket
+----------------------------------------------------------------------------*/
