@@ -375,7 +375,7 @@ table {
 	}
 }
 .sub_title {
-	font-family: $font_family_2;
+	font-family: 'Nixie One';
 	padding: 1rem 3rem 0rem 3rem;;
 	margin: 0;
 }
@@ -588,6 +588,7 @@ table {
 	overflow-y: auto;
 	.box {
 		margin: 0;
+
 	}
 	.box__title {
 		bottom: 0;
@@ -701,6 +702,7 @@ table {
 	.box {
 		margin: 4rem;
 		z-index: 999;
+      margin-bottom: 2rem;
 	}
 	.box__title {
 		top: -4rem;
