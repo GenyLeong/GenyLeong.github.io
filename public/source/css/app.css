@@ -1,6 +1,7 @@
 /*---------------------------------------------------------------------------*
  * Normalize
 ----------------------------------------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Nixie+One|Raleway&display=swap';
 @import "https://fonts.googleapis.com/css?family=Anton|Buenard:400,700";
 @import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Satisfy";
 progress, sub, sup {
@@ -1311,8 +1312,8 @@ a[href^="tel"] {
     margin-bottom: 21px;
     text-align: center;
     margin-top: 21px;
-    font-family: "Anton";
-    text-shadow: 0 0 1px #FFF; }
+    text-shadow: 0px 1px 1px #000;
+    font-family: 'Nixie One', cursive; }
   .Ticket-guia {
     color: #3D3D3D;
     margin-bottom: 10px; }
@@ -1387,6 +1388,14 @@ a[href^="tel"] {
         max-width: 300px;
         display: inline-block; } }
 
+.ProcedimientoPago h3 {
+  font-family: 'Nixie One';
+  color: #000; }
+
+.ProcedimientoPago p {
+  font-family: 'Raleway';
+  font-size: 15px; }
+
 .ProcedimientoPago .col-right {
   width: 45%;
   float: right;
@@ -1403,7 +1412,7 @@ a[href^="tel"] {
   border-right-width: medium;
   border-right-style: none;
   border-right-color: currentcolor;
-  border-right: 1px solid #73848c;
+  border-right: 1px dashed #000;
   width: 1px;
   float: right;
   margin-right: 3rem; }
@@ -1804,7 +1813,7 @@ table {
       border-radius: 50%; }
 
 .sub_title {
-  font-family: monospace, serif;
+  font-family: 'Nixie One';
   padding: 1rem 3rem 0rem 3rem;
   margin: 0; }
 
@@ -2089,7 +2098,8 @@ table {
     margin: 0; }
   .box {
     margin: 4rem;
-    z-index: 999; }
+    z-index: 999;
+    margin-bottom: 2rem; }
   .box__title {
     top: -4rem;
     right: -4rem;
