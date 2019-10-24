@@ -20,7 +20,7 @@ var copyfile = function(){
       'fonts/**/*',
       'data/*',
       // Images
-      'img/ciudades/*',
+      'img/proyectos/*',
       'img/generos/*',
       'img/*',
 
