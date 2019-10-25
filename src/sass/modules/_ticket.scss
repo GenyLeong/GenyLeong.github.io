@@ -169,6 +169,8 @@ $c_fondo_tiempo   : #e1ebfc;
 }
 
 .ProcedimientoPago{
+  // float: left;
+  clear: both;
   .GrupoTickets{
     max-width: 640px;
     margin: 2rem auto;
@@ -181,6 +183,11 @@ $c_fondo_tiempo   : #e1ebfc;
   p{
     font-family: 'Raleway';
     font-size: 15px;
+  }
+  .row-left{
+    clear: both;
+    display: block;
+    float: left;
   }
   .col-right, .col-left{
     display: block;
@@ -221,6 +228,7 @@ $c_fondo_tiempo   : #e1ebfc;
       width: 1px;
       float: right;
       margin-right: 3rem;
+      margin-bottom: 3rem;
     }
   }
 }

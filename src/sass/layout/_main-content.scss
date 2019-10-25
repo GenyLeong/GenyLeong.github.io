@@ -17,8 +17,12 @@
     margin-top: 1rem;
   }
   &-content {
-    max-width: 800px;
+    width: 100%;
+    min-height: 400px;
     margin: auto;
+    float: left;
+    clear: both;
+    position: relative;
   }
   &--espacios{
     display:block;
