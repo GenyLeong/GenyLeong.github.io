@@ -1308,7 +1308,7 @@ a[href^="tel"] {
   .Ticket-title {
     color: #000;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 21px;
     margin-bottom: 21px;
     text-align: center;
     margin-top: 21px;
@@ -1354,10 +1354,12 @@ a[href^="tel"] {
       background: transparent; }
     .Ticket-content img {
       width: 350px;
-      float: left;
-      margin-right: 2rem;
       border: 1px solid #000;
-      padding: 14px; }
+      padding: 14px;
+      margin-right: 0;
+      display: block;
+      float: none;
+      margin: auto; }
     .Ticket-content h3 {
       font-size: 19px;
       font-weight: 300;
@@ -1372,6 +1374,13 @@ a[href^="tel"] {
       float: none;
       display: block; }
     @media (min-width: 768px) {
+      .Ticket-content img {
+        width: 350px;
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #000;
+        padding: 14px; }
       .Ticket-content .row {
         width: 50%;
         float: left;
@@ -1388,6 +1397,11 @@ a[href^="tel"] {
         max-width: 300px;
         display: inline-block; } }
 
+.ProcedimientoPago .GrupoTickets {
+  max-width: 640px;
+  margin: 2rem auto;
+  display: block; }
+
 .ProcedimientoPago h3 {
   font-family: 'Nixie One';
   color: #000; }
@@ -1396,26 +1410,42 @@ a[href^="tel"] {
   font-family: 'Raleway';
   font-size: 15px; }
 
-.ProcedimientoPago .col-right {
-  width: 45%;
-  float: right;
-  clear: both; }
-
-.ProcedimientoPago .col-left {
-  width: 45%;
-  box-sizing: content-box;
-  float: left; }
+.ProcedimientoPago .col-right, .ProcedimientoPago .col-left {
+  display: block;
+  float: none;
+  width: 100%; }
 
 .ProcedimientoPago hr {
-  height: 56vh;
+  height: 1px;
+  width: 100%;
   border: none;
-  border-right-width: medium;
-  border-right-style: none;
-  border-right-color: currentcolor;
-  border-right: 1px dashed #000;
-  width: 1px;
-  float: right;
-  margin-right: 3rem; }
+  border-top: 1px dashed #000;
+  margin: 0; }
+
+.ProcedimientoPago .display-mobile {
+  display: block; }
+
+@media (min-width: 768px) {
+  .ProcedimientoPago .display-mobile {
+    display: none; }
+  .ProcedimientoPago .col-right {
+    width: 45%;
+    float: right;
+    clear: both; }
+  .ProcedimientoPago .col-left {
+    width: 45%;
+    box-sizing: content-box;
+    float: left; }
+  .ProcedimientoPago hr {
+    height: 56vh;
+    border: none;
+    border-right-width: medium;
+    border-right-style: none;
+    border-right-color: currentcolor;
+    border-right: 1px dashed #000;
+    width: 1px;
+    float: right;
+    margin-right: 3rem; } }
 
 /*---------------------------------------------------------------------------*
  * Fin:Ticket
@@ -1433,6 +1463,9 @@ a[href^="tel"] {
   padding: 1rem 4rem 0rem 4em;
   font-family: monospace, serif;
   font-size: 13px; }
+  @media screen and (max-width: 600px) {
+    .quote-cite {
+      padding: 1rem 1rem 0rem 1rem; } }
 
 .cv-title {
   letter-spacing: 4px; }
@@ -2165,8 +2198,9 @@ table {
 
 @media screen and (max-width: 600px) {
   .sub_title {
-    padding: 0rem;
-    font-size: 15px; }
+    padding: 1rem;
+    font-size: 15px;
+    text-align: justify; }
   .box__title {
     color: #ffffff; }
   .overlay__content_image_one {

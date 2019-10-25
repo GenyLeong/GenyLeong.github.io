@@ -40,7 +40,7 @@ $c_fondo_tiempo   : #e1ebfc;
   &-title {
     color: #000;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 21px;
     margin-bottom: 21px;
     text-align: center;
     margin-top: 21px;
@@ -109,10 +109,12 @@ $c_fondo_tiempo   : #e1ebfc;
     }
     img{
       width: 350px;
-      float: left;
-      margin-right: 2rem;
       border: 1px solid #000;
       padding: 14px;
+      margin-right: 0;
+      display: block;
+      float: none;
+      margin: auto;
     }
     h3{
       font-size: 19px;
@@ -131,6 +133,14 @@ $c_fondo_tiempo   : #e1ebfc;
       display: block;
     }
     @include breakpoint(tablet) {
+      img{
+        width: 350px;
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        border: 1px solid #000;
+        padding: 14px;
+      }
       .row{
         width:50%;
         float: left;
@@ -159,35 +169,59 @@ $c_fondo_tiempo   : #e1ebfc;
 }
 
 .ProcedimientoPago{
+  .GrupoTickets{
+    max-width: 640px;
+    margin: 2rem auto;
+    display: block;
+  }
   h3{
     font-family: 'Nixie One';
     color: #000;
   }
   p{
     font-family: 'Raleway';
-
-font-size: 15px;
+    font-size: 15px;
   }
-  .col-right{
-    width: 45%;
-    float: right;
-    clear: both;
-  }
-  .col-left{
-    width: 45%;
-    box-sizing: content-box;
-    float: left;
+  .col-right, .col-left{
+    display: block;
+    float:none;
+    width: 100%;
   }
   hr{
-    height: 56vh;
-    border: none;
-    border-right-width: medium;
-    border-right-style: none;
-    border-right-color: currentcolor;
-    border-right: 1px dashed #000;
-    width: 1px;
-    float: right;
-    margin-right: 3rem;
+    height: 1px;
+    width: 100%;
+    border:none;
+    border-top:1px dashed #000;
+    margin: 0;
+  }
+  .display-mobile{
+    display:block;
+  }
+  @include breakpoint(tablet){
+    .display-mobile{
+      display:none;
+    }
+    .col-right{
+      width: 45%;
+      float: right;
+      clear: both;
+    }
+    .col-left{
+      width: 45%;
+      box-sizing: content-box;
+      float: left;
+    }
+    hr{
+      height: 56vh;
+      border: none;
+      border-right-width: medium;
+      border-right-style: none;
+      border-right-color: currentcolor;
+      border-right: 1px dashed #000;
+      width: 1px;
+      float: right;
+      margin-right: 3rem;
+    }
   }
 }
 
