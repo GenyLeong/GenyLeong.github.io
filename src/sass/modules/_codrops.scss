@@ -586,7 +586,8 @@ table {
     align-items: center;
     padding: 20px 5vw;
     justify-content: center;
-	overflow-y: auto;
+	  overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 	.box {
 		margin: 0;
 

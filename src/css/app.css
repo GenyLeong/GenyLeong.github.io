@@ -2069,7 +2069,8 @@ table {
   padding: 20px 5vw;
   -ms-flex-pack: center;
       justify-content: center;
-  overflow-y: auto; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
   .overlay__item .box {
     margin: 0; }
   .overlay__item .box__title {
