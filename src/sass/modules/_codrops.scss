@@ -368,12 +368,14 @@ table {
 		width:140px;
 		margin:auto;
 		display: block;
-		img{
-			width:140px;
-      margin-top: 14px;
-      border-radius: 50%;
-		}
 	}
+  img{
+    margin:auto;
+		display: block;
+    width:140px;
+    margin-top: 14px;
+    border-radius: 50%;
+  }
 }
 .sub_title {
 	font-family: 'Nixie One';

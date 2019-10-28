@@ -937,7 +937,7 @@ a[href^="tel"] {
     .language-button {
       margin-top: 1rem;
       width: 91%;
-      bottom: 0px; } }
+      bottom: 7px; } }
 
 /*---------------------------------------------------------------------------*
  * Footer
@@ -1411,13 +1411,13 @@ a[href^="tel"] {
   .social-network a {
     display: inline-block; }
     .social-network a img {
-      width: 21px;
+      width: 28px;
       margin: 7px; }
   @media screen and (max-width: 600px) {
     .social-network {
       width: 91%;
       height: 45px;
-      bottom: -35px; } }
+      bottom: -42px; } }
 
 .quote-cite {
   margin: 0;
@@ -1758,10 +1758,12 @@ table {
     width: 140px;
     margin: auto;
     display: block; }
-    .title-logo a img {
-      width: 140px;
-      margin-top: 14px;
-      border-radius: 50%; }
+  .title-logo img {
+    margin: auto;
+    display: block;
+    width: 140px;
+    margin-top: 14px;
+    border-radius: 50%; }
 
 .sub_title {
   font-family: 'Nixie One';
