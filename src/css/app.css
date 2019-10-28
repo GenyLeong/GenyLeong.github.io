@@ -1301,7 +1301,7 @@ a[href^="tel"] {
     .Ticket-content a.bg-transparent {
       background: transparent; }
     .Ticket-content img {
-      width: 350px;
+      width: 300px;
       border: 1px solid #000;
       padding: 14px;
       margin-right: 0;
@@ -1416,7 +1416,7 @@ a[href^="tel"] {
   @media screen and (max-width: 600px) {
     .social-network {
       width: 91%;
-      height: 75px;
+      height: 45px;
       bottom: -35px; } }
 
 .quote-cite {
