@@ -31,15 +31,11 @@ var copyfile = function(){
       'js/app.js',
 
       // HTML
-      'express-online-*.html',
-      'express-cash-*.html',
-      'message-*.html',
-      'message-voucher-*.html',
-      'message-integration-*.html',
       '!.DS_Store',
       '!README.html',
-      '!index.html'
-    ],
+      '!index.html',
+      '!en.html'
+        ],
   };
   copy('src', 'public/source/', options)
     .then(function(results) {
@@ -50,7 +46,7 @@ var copyfile = function(){
     });
 
   // Index
-  copy('src', 'public/', {filter: ['index.html']})
+  copy('src', 'public/', {filter: ['index.html', 'en.html']})
     .then(function(results) {
       addSourcePath();
       console.info('Copied ' + results.length + ' files');
@@ -64,7 +60,7 @@ var copyfile = function(){
       replace({
         regex: 'js/',
         replacement: 'source/js/',
-        paths: ['./public/index.html'],
+        paths: ['./public/index.html', './public/en.html'],
         recursive: true,
         silent: true
       });

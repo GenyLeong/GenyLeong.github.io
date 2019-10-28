@@ -38,13 +38,13 @@ var CountriesDropdown = function(){
       var strUser = $(".select-styled").text().toUpperCase()
       $(".espacios-content").removeClass("is-visible")
       console.log(strUser)
-      if(strUser=="PERIODISMO"){
+      if(strUser=="PERIODISMO" || strUser=="JOURNALISM"){
         $(".periodismo").addClass("is-visible")
       }
-      if(strUser=="POLÍTICA"){
+      if(strUser=="POLÍTICA" || strUser=="POLITICS"){
         $(".politica").addClass("is-visible")
       }
-      if(strUser=="MÚSICA"){
+      if(strUser=="MÚSICA" || strUser=="MUSIC"){
         $(".musica").addClass("is-visible")
       }
     });

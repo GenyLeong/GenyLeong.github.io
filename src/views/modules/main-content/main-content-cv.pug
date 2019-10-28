@@ -6,39 +6,72 @@ section.MainContent.is-visible(data-nom="generos")
   .MainContent-header
     h3.Ticket-title.cv-title Génesis León
   .MainContent-content
-    //ProcedimientoPago
-    .ProcedimientoPago
-      .row
-        .col-12
-          h3 Perfil
-          p Programadora de plataformas interactivas y visualización de datos. Activista por la información pública y los datos abiertos. Entusiasta del open source. Estudiante de periodismo en PUCP.
-        .col-12
-          h3 Contacto
-          p(style="text-align:center")
-            span &#9997; : <a href="mailto:genesis.leon.carbajal@gmail.com">genesis.leon.carbajal@gmail.com</a> / 
-            span &#9743; : +51 910 079 406 / 
-            span &#9839; : <a href="https://twitter.com/geny_leong">@geny_leong</a>
-      .row.row-left
-        h3 Experiencia
-        .col-right
-          .item
-            p
-              span.title-job PROGRAMMER UI / SAFETYPAY
-            p.date-job 2017 - 2018
-            p Estuve encargada de analizar información y construir prototipos para mejorar la interfaz de usuario en el desarrollo front - end de las plataformas de pago.
-          hr.display-mobile
-          .item
-            p
-              span.title-job TRANSMEDIA DEVELOPER / LA REPUBLICA
-            p.date-job 2016 - 2017
-            p Investigadora. Programadora de plataformas interactivas y visualización de datos para el periodismo. 
-        hr
-        .col-left
-          .item
-            p
-              span.title-job PROGRAMMER, DATA JOURNALIST AND DATA ACTIVIST / INDEPENDENT
-            p.date-job 2018 - Presente
-            p Trabajo muy interesada en acercar información periodística y académica al ciudadano a través de plataformas interactivas. Además en promover el uso de información pública como datos abiertos para lograr el gobierno abierto peruano. A veces me paro al frente a hablar de data activismo.       
+    if active_link == 'spanish'
+      .ProcedimientoPago
+        .row
+          .col-12
+            h3 Perfil
+            p Programadora de plataformas interactivas y visualización de datos. Activista por la información pública y los datos abiertos. Entusiasta del open source. Estudiante de periodismo en PUCP.
+          .col-12
+            h3 Contacto
+            p(style="text-align:center")
+              span &#9997; : <a href="mailto:genesis.leon.carbajal@gmail.com">genesis.leon.carbajal@gmail.com</a> / 
+              span &#9743; : +51 910 079 406 / 
+              span &#9839; : <a href="https://twitter.com/geny_leong">@geny_leong</a>
+        .row.row-left
+          h3 Experiencia
+          .col-right
+            .item
+              p
+                span.title-job PROGRAMMER UI / SAFETYPAY
+              p.date-job 2017 - 2018
+              p Estuve encargada de analizar información y construir prototipos para mejorar la interfaz de usuario en el desarrollo front - end de las plataformas de pago.
+            hr.display-mobile
+            .item
+              p
+                span.title-job TRANSMEDIA DEVELOPER / LA REPUBLICA
+              p.date-job 2016 - 2017
+              p Investigadora. Programadora de plataformas interactivas y visualización de datos para el periodismo. 
+          hr
+          .col-left
+            .item
+              p
+                span.title-job PROGRAMMER, DATA JOURNALIST AND DATA ACTIVIST / INDEPENDENT
+              p.date-job 2018 - Presente
+              p Trabajo muy interesada en acercar información periodística y académica al ciudadano a través de plataformas interactivas. Además en promover el uso de información pública como datos abiertos para lograr el gobierno abierto peruano. A veces me paro al frente a hablar de data activismo.       
+    if active_link == 'english'
+      .ProcedimientoPago
+        .row
+          .col-12
+            h3 Profile
+            p Programmer of interactive platforms and data visualization. Activist for public information and open data. Open source enthusiast. Journalism student at PUCP.
+          .col-12
+            h3 Contact
+            p(style="text-align:center")
+              span &#9997; : <a href="mailto:genesis.leon.carbajal@gmail.com">genesis.leon.carbajal@gmail.com</a> / 
+              span &#9743; : +51 910 079 406 / 
+              span &#9839; : <a href="https://twitter.com/geny_leong">@geny_leong</a>
+        .row.row-left
+          h3 Experience
+          .col-right
+            .item
+              p
+                span.title-job PROGRAMMER UI / SAFETYPAY
+              p.date-job 2017 - 2018
+              p I was in charge of analyzing information and building prototypes to improve the user interface in the front-end development of payment platforms.
+            hr.display-mobile
+            .item
+              p
+                span.title-job TRANSMEDIA DEVELOPER / LA REPUBLICA
+              p.date-job 2016 - 2017
+              p Researcher Programmer of interactive platforms and data visualization for journalism.
+          hr
+          .col-left
+            .item
+              p
+                span.title-job PROGRAMMER, DATA JOURNALIST AND DATA ACTIVIST / INDEPENDENT
+              p.date-job 2018 - Present
+              p I am very interested in bringing journalistic and academic information to the citizen through interactive platforms. In addition to promoting the use of public information as open data to achieve Peruvian open government. Sometimes I stand up to talk about data activism.
     .social-network
       a(href="mailto:genesis.leon.carbajal@gmail.com" target="_blank")
         img(src="img/mail.svg" alt="mail")
