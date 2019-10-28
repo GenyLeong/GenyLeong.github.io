@@ -1,8 +1,16 @@
 .Ticket.Ticket-azteca(data-nom-entidad="cajamarca")
   .Ticket-title Especial LavaJuez
-  .Ticket-content
-    a.bg-transparent(href="https://idl-reporteros.pe/especial-lava-juez/" target="_blank")
-      img(src="img/proyectos/lavajuez.jpg", alt="")
-    h3 El<b> Especial LavaJuez</b> es una web desarrollada en conjunto con IDL-R cuyo objetivo principal es ser un repositorio de la investigación que hicieron para destapar la corrupción en el Poder Judicial, más conocida como CNM Audios. En la plataforma se puede buscar a los personajes implicados y escuchar sus respectivos audios, leer artículos relacionados al tema y conocer la metodología de investigación. 
-    h3 
-      a(href="https://idl-reporteros.pe/especial-lava-juez/" target="_blank") Puedes ver el trabajo aquí.
+  if active_link == 'spanish'
+    .Ticket-content
+      a.bg-transparent(href="https://idl-reporteros.pe/especial-lava-juez/" target="_blank")
+        img(src="img/proyectos/lavajuez.jpg", alt="")
+      h3 El<b> Especial LavaJuez</b> es una web desarrollada en conjunto con IDL-R cuyo objetivo principal es ser un repositorio de la investigación que hicieron para destapar la corrupción en el Poder Judicial, más conocida como CNM Audios. En la plataforma se puede buscar a los personajes implicados y escuchar sus respectivos audios, leer artículos relacionados al tema y conocer la metodología de investigación. 
+      h3 
+        a(href="https://idl-reporteros.pe/especial-lava-juez/" target="_blank") Puedes ver el trabajo aquí.
+  if active_link == 'english'
+    .Ticket-content
+      a.bg-transparent(href="https://idl-reporteros.pe/especial-lava-juez/" target="_blank")
+        img(src="img/proyectos/lavajuez.jpg", alt="")
+      h3 <b>LavaJuez</b> it's a website developed for IDL-R whose main objective is to be a repository of the investigation they did to uncover corruption in the Judiciary, better known as CNM Audios. On the platform you can search for the characters involved and listen to their respective audios, read articles related and learn about the research methodology.
+      h3 
+        a(href="https://idl-reporteros.pe/especial-lava-juez/" target="_blank") Explore the interactive here.

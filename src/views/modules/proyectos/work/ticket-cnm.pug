@@ -1,8 +1,16 @@
 .Ticket.Ticket-banamex(data-nom-entidad="ayacucho")
   .Ticket-title Mapa relacional CNM
-  .Ticket-content
-    a.bg-transparent(href="https://genyleong.github.io/CNM/" target="_blank") 
-      img(src="img/proyectos/cnm.jpg", alt="")
-    h3 El<b> mapa relacional CNM</b> es una web desarrollada con D3.JS que busca encontrar vínculos de los personajes implicados en el escándalo por corrupción de los CNMAudios. Además de los vínculos, se puede conocer una pequeña descripción de quienes son y que hacen. El mapa es adaptable a diversos dispositivos si se regulan los nodos y enlaces. También cuenta con un buscador por si tienen un nombre en mente. 
-    h3 
-      a(href="https://genyleong.github.io/CNM/" target="_blank") Puedes ver el trabajo aquí.
+  if active_link == 'spanish'
+    .Ticket-content
+      a.bg-transparent(href="https://genyleong.github.io/CNM/" target="_blank") 
+        img(src="img/proyectos/cnm.jpg", alt="")
+      h3 El<b> mapa relacional CNM</b> es una web desarrollada con D3.JS que busca encontrar vínculos de los personajes implicados en el escándalo por corrupción de los CNMAudios. Además de los vínculos, se puede conocer una pequeña descripción de quienes son y que hacen. El mapa es adaptable a diversos dispositivos si se regulan los nodos y enlaces. También cuenta con un buscador por si tienen un nombre en mente. 
+      h3 
+        a(href="https://genyleong.github.io/CNM/" target="_blank") Puedes ver el trabajo aquí.
+  if active_link == 'english'
+    .Ticket-content
+      a.bg-transparent(href="https://genyleong.github.io/CNM/" target="_blank") 
+        img(src="img/proyectos/cnm.jpg", alt="")
+      h3 The<b> mapa relacional CNM</b> it's a website developed with D3.JS that finding links to the characters involved in the corruption scandal CNMAudios. In addition to the links, you can read a small description of who they are and what they do. The map is adaptable to various devices if nodes and links are regulated. It also has a search engine in case you have a name in mind.
+      h3 
+        a(href="https://genyleong.github.io/CNM/" target="_blank") Explore the interactive here.

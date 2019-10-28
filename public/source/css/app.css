@@ -893,7 +893,7 @@ a[href^="tel"] {
     margin-top: 1rem; }
   .MainContent-content {
     width: 100%;
-    min-height: 400px;
+    min-height: 450px;
     margin: auto;
     float: left;
     clear: both;
@@ -929,10 +929,15 @@ a[href^="tel"] {
 ----------------------------------------------------------------------------*/
 .language-button {
   display: block;
-  margin-top: 1rem;
   text-align: center;
   position: absolute;
-  width: 91%; }
+  width: 97%;
+  bottom: 56px; }
+  @media screen and (max-width: 600px) {
+    .language-button {
+      margin-top: 1rem;
+      width: 91%;
+      bottom: 0px; } }
 
 /*---------------------------------------------------------------------------*
  * Footer
@@ -1341,7 +1346,9 @@ a[href^="tel"] {
         display: inline-block; } }
 
 .ProcedimientoPago {
-  clear: both; }
+  clear: both;
+  display: block;
+  margin-bottom: 3rem; }
   .ProcedimientoPago .GrupoTickets {
     max-width: 640px;
     margin: 2rem auto;
@@ -1397,10 +1404,10 @@ a[href^="tel"] {
 .social-network {
   text-align: center;
   position: absolute;
-  width: 98%;
+  width: 97%;
   overflow: hidden;
-  bottom: 0;
-  bottom: -35px; }
+  bottom: 14px;
+  height: 35px; }
   .social-network a {
     display: inline-block; }
     .social-network a img {
@@ -1409,7 +1416,8 @@ a[href^="tel"] {
   @media screen and (max-width: 600px) {
     .social-network {
       width: 91%;
-      height: 75px; } }
+      height: 75px;
+      bottom: -35px; } }
 
 .quote-cite {
   margin: 0;

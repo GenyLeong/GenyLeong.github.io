@@ -170,7 +170,9 @@ $c_fondo_tiempo   : #e1ebfc;
 
 .ProcedimientoPago{
   // float: left;
-  clear: both;
+    clear: both;
+  display: block;
+  margin-bottom: 3rem;
   .GrupoTickets{
     max-width: 640px;
     margin: 2rem auto;
