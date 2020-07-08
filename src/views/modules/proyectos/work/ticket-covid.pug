@@ -1,0 +1,16 @@
+.Ticket.is-visible(data-nom-entidad="covid")
+  .Ticket-title Tasa de contagio de COVID-19 por región en Perú
+  if active_link == 'spanish'
+    .Ticket-content
+      a.bg-transparent(href="https://data.larepublica.pe/envivo/1551044-numero-r-regiones-covid19" target="_blank") 
+        img(src="img/proyectos/covid.png", alt="")
+      h3 <b> Tasa de contagio de COVID-19 por región en Perú</b> es un especial que reproduce las tasas de contagios de COVID-19 en las regiones del país, calculados en base a un modelo estadístico de código abierto. 
+      h3 
+        a(href="https://data.larepublica.pe/envivo/1551044-numero-r-regiones-covid19" target="_blank") Puedes ver el trabajo aquí.
+  if active_link == 'english'
+    .Ticket-content
+      a.bg-transparent(href="https://data.larepublica.pe/envivo/1551044-numero-r-regiones-covid19" target="_blank") 
+        img(src="img/proyectos/covid.png", alt="")
+      h3 <b> Tasa de contagio de COVID-19 por región en Perú</b> is a report that reproduces rate of COVID-19 cases in Peru regions, calculated based on an open source statistical model.
+      h3 
+        a(href="https://data.larepublica.pe/envivo/1551044-numero-r-regiones-covid19" target="_blank") Explore the interactive web here.

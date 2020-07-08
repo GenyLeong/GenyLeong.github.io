@@ -1,13 +1,14 @@
 //MainContent - Pagar en Efectivo
 section.MainContent.is-visible(data-nom="ciudades")
   h1.title-logo
-      img(src="https://pbs.twimg.com/profile_images/1186728108075945985/3YkeXowI_400x400.jpg", target="_blank")
+      img(src="img/perfil.jpg", target="_blank")
   .MainContent-header
     .GrupoSlides
       include ../slides/slide-proyectos.pug
   .MainContent-content
     //ProcedimientoPago
     .ProcedimientoPago
+        include ../proyectos/work/ticket-covid.pug
         include ../proyectos/work/ticket-laleche.pug
         include ../proyectos/work/ticket-altiplano.pug
         include ../proyectos/work/ticket-arbitrajes.pug
