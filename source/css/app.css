@@ -42,7 +42,8 @@ a:active, a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; }
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; }
 
 b, strong {
   font-weight: bolder; }
@@ -1017,7 +1018,6 @@ a[href^="tel"] {
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent; }
 
@@ -1100,12 +1100,9 @@ a[href^="tel"] {
   .SlideFinancieras.is-visible {
     display: block; }
   .SlideFinancieras.is-center {
-    display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center; }
+    align-items: center;
+    justify-content: center; }
   @media print {
     .SlideFinancieras {
       display: none; } }
@@ -1185,12 +1182,9 @@ a[href^="tel"] {
       margin: 0 auto;
       float: none; }
   .SlideFinancieras .link {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
     background: #000;
     height: 100px;
     line-height: 47px;
@@ -1457,6 +1451,10 @@ a[href^="tel"] {
  * Endof: InstructionsBy
 ----------------------------------------------------------------------------*/
 /* Page Loader */
+@-webkit-keyframes loaderAnim {
+  to {
+    opacity: 1;
+    transform: scale3d(0.5, 0.5, 1); } }
 
 @keyframes loaderAnim {
   to {
@@ -1732,7 +1730,8 @@ table {
   border-radius: 50%;
   opacity: 0.4;
   background: var(--color-link);
-  animation: loaderAnim 0.7s linear infinite alternate forwards; }
+  -webkit-animation: loaderAnim 0.7s linear infinite alternate forwards;
+          animation: loaderAnim 0.7s linear infinite alternate forwards; }
 
 .hidden {
   position: absolute;
@@ -1774,14 +1773,10 @@ table {
 .codrops-header {
   position: relative;
   z-index: 100;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-align: center;
-      align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
   padding: 2rem; }
 
 .codrops-header__title {
@@ -1800,10 +1795,8 @@ table {
 
 .codrops-links {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin: 0 1em 0 0;
   text-align: center;
   white-space: nowrap; }
@@ -1904,8 +1897,7 @@ table {
 
 .box__img {
   display: block;
-  -ms-flex: none;
-      flex: none;
+  flex: none;
   margin: 0 auto;
   max-width: 100%;
   -webkit-filter: grayscale(1);
@@ -1971,13 +1963,10 @@ table {
   left: 0;
   opacity: 0;
   display: block;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px 5vw;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
   .overlay__item .box {
@@ -2042,13 +2031,10 @@ table {
 
 @media screen and (min-width: 55em) {
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     padding: 1rem 3rem 0rem 3rem;
-    -ms-grid-columns: (calc(100% / 3))[3];
-        grid-template-columns: repeat(3, calc(100% / 3)); }
+    grid-template-columns: repeat(3, calc(100% / 3)); }
   .grid__item {
     margin: 0; }
   .box {
