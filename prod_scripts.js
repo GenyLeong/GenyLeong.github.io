@@ -59,7 +59,7 @@ var copyfile = function () {
     replace({
       regex: "js/",
       replacement: "source/js/",
-      paths: ["./index.html", "./en.html"],
+      paths: ["./source/index.html", "./source/en.html"],
       recursive: true,
       silent: true,
     });
