@@ -1,68 +1,67 @@
-var fs = require('fs');
-var del = require('del');
-var copy = require('recursive-copy');
-var replace = require('replace');
+var fs = require("fs");
+var del = require("del");
+var copy = require("recursive-copy");
+var replace = require("replace");
 
 // Delete all public files
-del(['./public/*']).then(paths => {
-  console.log('Deleted files and folders:\n', paths.join('\n'));
+del(["./source/*"]).then((paths) => {
+  console.log("Deleted files and folders:\n", paths.join("\n"));
 
   copyfile();
 });
 
 // Copy files from src to public
-var copyfile = function(){
-
+var copyfile = function () {
   // Source elements
   var options = {
     filter: [
-      'css/**/*',
-      'fonts/**/*',
-      'data/*',
+      "css/**/*",
+      "fonts/**/*",
+      "data/*",
       // Images
-      'img/proyectos/*',
-      'img/generos/*',
-      'img/*',
+      "img/proyectos/*",
+      "img/generos/*",
+      "img/*",
 
       // JS vendor files
-      'js/vendor/*.js',
+      "js/vendor/*.js",
       // Own javascript files
-      'js/modules/*.js',
-      'js/app.js',
+      "js/modules/*.js",
+      "js/app.js",
 
       // HTML
-      '!.DS_Store',
-      '!README.html',
-      '!index.html',
-      '!en.html'
-        ],
+      "!.DS_Store",
+      "!README.html",
+      "!index.html",
+      "!en.html",
+    ],
   };
-  copy('src', 'public/source/', options)
-    .then(function(results) {
-      console.info('Copied ' + results.length + ' files');
+  copy("src", "source/", options)
+    .then(function (results) {
+      console.info("Copied " + results.length + " files");
     })
-    .catch(function(error) {
-      console.error('Copy failed: ' + error);
+    .catch(function (error) {
+      console.error("Copy failed: " + error);
     });
 
   // Index
-  copy('src', 'public/', {filter: ['index.html', 'en.html']})
-    .then(function(results) {
+  copy("src", "source/", { filter: ["index.html", "en.html"] })
+    .then(function (results) {
       addSourcePath();
-      console.info('Copied ' + results.length + ' files');
+      console.info("Copied " + results.length + " files");
     })
-    .catch(function(error) {
-      console.error('Copy failed: ' + error);
+    .catch(function (error) {
+      console.error("Copy failed: " + error);
     });
 
-    var addSourcePath = function() {
-      // Edit index.html
-      replace({
-        regex: 'js/',
-        replacement: 'source/js/',
-        paths: ['./public/index.html', './public/en.html'],
-        recursive: true,
-        silent: true
-      });
-    };
-  }
+  var addSourcePath = function () {
+    // Edit index.html
+    replace({
+      regex: "js/",
+      replacement: "source/js/",
+      paths: ["./index.html", "./en.html"],
+      recursive: true,
+      silent: true,
+    });
+  };
+};

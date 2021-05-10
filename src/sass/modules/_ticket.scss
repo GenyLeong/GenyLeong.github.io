@@ -2,13 +2,14 @@
  * Ticket
 ----------------------------------------------------------------------------*/
 // Colores
-$c_borde_punteado : #ceddf8;
-$c_fondo_barras   : #4380c6;
-$c_fondo_total    : #f6f6f6;
-$c_fondo_tiempo   : #e1ebfc;
+$c_borde_punteado: #ceddf8;
+$c_fondo_barras: #4380c6;
+$c_fondo_total: #f6f6f6;
+$c_fondo_tiempo: #e1ebfc;
 
 // Estilos
-.Ticket, .Ticket * {
+.Ticket,
+.Ticket * {
   box-sizing: border-box;
 }
 .Ticket {
@@ -39,30 +40,30 @@ $c_fondo_tiempo   : #e1ebfc;
   }
   &-title {
     color: #000;
-    font-weight: 500;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: 24px;
     margin-bottom: 21px;
     text-align: center;
     margin-top: 21px;
-    text-shadow: 0px 1px 1px #000;
-    font-family: 'Nixie One', cursive;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: 0px;
   }
 
   &-guia {
     color: $c_texto_base;
     margin-bottom: 10px;
-    span{
+    span {
       font-size: 28px;
       font-weight: 600;
       margin: 0px 4px;
     }
-    p{
+    p {
       font-size: 18px;
       color: #404040;
-      margin:0;
+      margin: 0;
     }
-    a{
-      &:hover{
+    a {
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -71,7 +72,7 @@ $c_fondo_tiempo   : #e1ebfc;
   &-content {
     display: block;
     width: 100%;
-    a{
+    a {
       white-space: nowrap;
       font-weight: 600;
       background: black;
@@ -84,30 +85,30 @@ $c_fondo_tiempo   : #e1ebfc;
       -webkit-box-shadow: 0 0 1px transparent;
       box-shadow: 0 0 1px transparent;
       -moz-osx-font-smoothing: grayscale;
-      -webkit-transition: transform .3s;
-      -o-transition: transform .3s;
-      transition: transform .3s;
+      -webkit-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s;
       line-height: 20px;
       white-space: nowrap;
       // float: right;
-      &:hover{
+      &:hover {
         color: white;
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         -o-transform: scale(1.05);
         transform: scale(1.05);
       }
-      &:visited{
+      &:visited {
         color: white;
       }
-      &:focus{
+      &:focus {
         color: white;
       }
     }
-    a.bg-transparent{
+    a.bg-transparent {
       background: transparent;
     }
-    img{
+    img {
       width: 300px;
       border: 1px solid #000;
       padding: 14px;
@@ -116,24 +117,24 @@ $c_fondo_tiempo   : #e1ebfc;
       float: none;
       margin: auto;
     }
-    h3{
+    h3 {
       font-size: 19px;
       font-weight: 300;
       line-height: 1.5;
       margin: 0;
       margin-bottom: 14px;
-      span{
+      span {
         max-width: 300px;
         display: inline-block;
       }
     }
-    .row{
-      width:100%;
+    .row {
+      width: 100%;
       float: none;
       display: block;
     }
     @include breakpoint(tablet) {
-      img{
+      img {
         width: 350px;
         float: left;
         margin-right: 2rem;
@@ -141,25 +142,25 @@ $c_fondo_tiempo   : #e1ebfc;
         border: 1px solid #000;
         padding: 14px;
       }
-      .row{
-        width:50%;
+      .row {
+        width: 50%;
         float: left;
         display: inline-block;
         padding: 0 1rem;
       }
-      h3{
+      h3 {
         font-size: 21px;
         font-weight: 500;
         // clear:both;
-        span{
+        span {
           max-width: 260px;
           display: inline-block;
         }
       }
     }
     @include breakpoint(desktop) {
-      h3{
-        span{
+      h3 {
+        span {
           max-width: 300px;
           display: inline-block;
         }
@@ -168,59 +169,59 @@ $c_fondo_tiempo   : #e1ebfc;
   }
 }
 
-.ProcedimientoPago{
+.ProcedimientoPago {
   // float: left;
-    clear: both;
+  clear: both;
   display: block;
   margin-bottom: 3rem;
-  .GrupoTickets{
+  .GrupoTickets {
     max-width: 640px;
     margin: 2rem auto;
     display: block;
   }
-  h3{
-    font-family: 'Nixie One';
+  h3 {
+    font-family: "Raleway", sans-serif;
     color: #000;
   }
-  p{
-    font-family: 'Raleway';
+  p {
+    font-family: "Raleway";
     font-size: 15px;
   }
-  .row-left{
-    clear: both;
-    display: block;
-    float: left;
-  }
-  .col-right, .col-left{
-    display: block;
-    float:none;
-    width: 100%;
-  }
-  hr{
+  // .row-left {
+  //   clear: both;
+  //   display: block;
+  //   float: left;
+  // }
+  // .col-right,
+  // .col-left {
+  //   display: block;
+  //   float: none;
+  //   width: 100%;
+  // }
+  hr {
     height: 1px;
     width: 100%;
-    border:none;
-    border-top:1px dashed #000;
+    border: none;
+    border-top: 1px dashed #000;
     margin: 0;
   }
-  .display-mobile{
-    display:block;
+  .display-mobile {
+    display: block;
   }
-  @include breakpoint(tablet){
-    .display-mobile{
-      display:none;
+  @include breakpoint(tablet) {
+    .display-mobile {
+      display: none;
     }
-    .col-right{
+    .col-right {
       width: 45%;
       float: right;
-      clear: both;
+      // clear: both;
     }
-    .col-left{
+    .col-left {
       width: 45%;
-      box-sizing: content-box;
       float: left;
     }
-    hr{
+    hr {
       height: 56vh;
       border: none;
       border-right-width: medium;
