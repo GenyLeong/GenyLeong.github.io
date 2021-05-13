@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://genyleong.github.io/sitemap.xml
-Host: https://genyleong.github.io
