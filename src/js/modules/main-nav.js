@@ -1,21 +1,20 @@
-var MainNav = (function(){
+var MainNav = (function () {
   // Variables que se reutilizarán: referencias al DOM, variables estáticas, etc.
   var set = {
-    nav_button: $('.grid__item')
+    nav_button: $(".grid__item"),
   };
 
   // Método de inicialización del módulo
-  var init = function() {
+  var init = function () {
     events.navegacion();
   };
 
   var events = {};
-  events.navegacion = function() {
-    set.nav_button.on('click', function(){
-
+  events.navegacion = function () {
+    set.nav_button.on("click", function () {
       // Aplicamos estilos para los botones del menú
-      set.nav_button.removeClass('is-active');
-      $(this).addClass('is-active');
+      set.nav_button.removeClass("is-active");
+      $(this).addClass("is-active");
 
       // Llamamos al cambio de contenido
       MainContent.actualizarContenidoPrincipal();
@@ -24,7 +23,6 @@ var MainNav = (function(){
 
   // Métodos publicos
   return {
-    init: init
+    init: init,
   };
-
 })();
