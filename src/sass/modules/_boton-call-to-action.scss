@@ -1,28 +1,29 @@
 .social-network {
-  margin-top: 21px;
-  text-align: center;
-  position: relative;
-
-  a {
-    display: inline-block;
-    img {
-      width: 28px;
-      margin: 7px;
+    margin-top: 21px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    a {
+        display: inline-block;
+        img {
+            width: 28px;
+            margin: 7px;
+        }
     }
-  }
-  @media screen and (max-width: 600px) {
-    width: 91%;
-    height: 45px;
-    bottom: -42px;
-  }
+    @media screen and (max-width: 600px) {
+        width: 91%;
+        height: 45px;
+        bottom: -42px;
+    }
 }
 
 .quote-cite {
-  margin: 0;
-  padding: 1rem 4rem 0rem 4em;
-  font-family: monospace, serif;
-  font-size: 13px;
-  @media screen and (max-width: 600px) {
-    padding: 1rem 1rem 0rem 1rem;
-  }
+    margin: 0;
+    padding: 1rem 4rem 0rem 4em;
+    font-family: monospace, serif;
+    font-size: 13px;
+    @media screen and (max-width: 600px) {
+        padding: 1rem 1rem 0rem 1rem;
+    }
 }

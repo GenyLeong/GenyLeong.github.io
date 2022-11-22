@@ -10,7 +10,7 @@ main
     h1.title-logo
       a(href="/")
         img(src="img/perfil.jpg", target="_blank")
-    h3.sub_title ¡Hola! Mi nombre es GÉNESIS LEÓN. Soy programadora UI, estudiante de periodismo y activista de datos. Aquí muestro algunos proyectos que hice, mi perfil profesional y trato de explicar por qué hago lo que hago.
+    h3.sub_title ¡Hola! Mi nombre es GÉNESIS LEÓN. Soy programadora UI, estudiante de ciencia política y activista de datos. Aquí muestro algunos proyectos que hice, mi perfil profesional y trato de explicar por qué hago lo que hago.
     p.quote-cite
       q El sentido de la política es la libertad. La política es siempre la preocupación por el mundo, sin el cual aquellos que se preocupan y son políticos no consideran que la vida merezca ser vivida. 
       <br> — Hannah Arendt      
@@ -23,7 +23,7 @@ main
             span.box__title-inner(data-hover="Bandas") Bandas
           h4.box__text
             span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.even Proyectos
-            //- .box__deco &#127961;
+            .box__deco.box__deco--bottom 🍵
       a.grid__item(href="#preview-2", data-nom="generos")
         .box
           .box__shadow
@@ -32,24 +32,22 @@ main
             span.box__title-inner.box__title-inner_image_one(data-hover="Bandas") Bandas
           h4.box__text
             span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.odd CV
-          .box__deco.box__deco--bottom &#9835;
-      a.grid__item(href="#preview-3")
+          .box__deco.box__deco--bottom ☏
+      a.grid__item.grid__item--noclick(href="https://genyleong.github.io/blog/" target="_blank")
         .box
           .box__shadow
           img.box__img(src="img/girl.svg" alt="Sobre mi")
-          //h3.box__title.box__title--straight.box__title--bottom_image_one
-            span.box__title-inner.box__title-inner_image_one(data-hover="Espacios") Espacios
           h4.box__text
-            span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.even Sobre mi
-          .box__deco.box__deco--top ?
+            span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.even BLOG
+          .box__deco.box__deco--top 📝
   .overlay
     .overlay__reveal
     #preview-1.overlay__item
       include ../../modules/main-content/main-content-proyectos.pug
     #preview-2.overlay__item
       include ../../modules/main-content/main-content-cv.pug
-    #preview-3.overlay__item
-      include ../../modules/main-content/main-content-espacios-virtuales.pug          
+    //- #preview-3.overlay__item
+    //-   include ../../modules/main-content/main-content-espacios-virtuales.pug          
     button.overlay__close
       svg.icon.icon--cross
         use(xlink:href="#icon-cross")

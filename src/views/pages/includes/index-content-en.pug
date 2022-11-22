@@ -10,7 +10,7 @@ main
     h1.title-logo
       a(href="/en.html")
         img(src="img/perfil.jpg", target="_blank")
-    h3.sub_title Hello! My name is GÉNESIS LEÓN. I'm an UI programmer, journalism student and data activist. Here I show some projects I did, my professional profile and try to explain why I do what I do.
+    h3.sub_title Hello! My name is GÉNESIS LEÓN. I'm an UI programmer, political science student and data activist. Here I show some projects I did, my professional profile and try to explain why I do what I do.
     p.quote-cite
       q The meaning of politics is freedom. Politics is always the concern for the world, without which those who care and are politicians do not consider that life deserves to be lived. 
       <br> — Hannah Arendt      
@@ -23,7 +23,7 @@ main
             span.box__title-inner(data-hover="Bandas") Bandas
           h4.box__text
             span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.even Projects
-            //- .box__deco &#127961;
+            .box__deco.box__deco--bottom 🍵
       a.grid__item(href="#preview-2", data-nom="generos")
         .box
           .box__shadow
@@ -32,8 +32,8 @@ main
             span.box__title-inner.box__title-inner_image_one(data-hover="Bandas") Bandas
           h4.box__text
             span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.odd CV
-          .box__deco.box__deco--bottom &#9835;
-      a.grid__item(href="#preview-3")
+            .box__deco.box__deco--bottom ☏
+      a.grid__item.grid__item--noclick(href="https://genyleong.github.io/blog/" target="_blank")
         .box
           .box__shadow
           img.box__img(src="img/girl.svg" alt="Sobre mi")
@@ -41,15 +41,15 @@ main
             span.box__title-inner.box__title-inner_image_one(data-hover="Espacios") Espacios
           h4.box__text
             span.box__text-inner.box__text-inner--rotated2.box__text-inner--reverse.even About me
-          .box__deco.box__deco--top ?
+          .box__deco.box__deco--top 📝
   .overlay
     .overlay__reveal
     #preview-1.overlay__item
       include ../../modules/main-content/main-content-proyectos.pug
     #preview-2.overlay__item
       include ../../modules/main-content/main-content-cv.pug
-    #preview-3.overlay__item
-      include ../../modules/main-content/main-content-espacios-virtuales.pug          
+    //- #preview-3.overlay__item
+    //-   include ../../modules/main-content/main-content-espacios-virtuales.pug          
     button.overlay__close
       svg.icon.icon--cross
         use(xlink:href="#icon-cross")
