@@ -14,9 +14,12 @@
         "url": "https://github.com/GenyLeong/genyleong.github.io.git"
     },
     "keywords": [
-        "safetypay"
+        "blog",
+        "programadora",
+        "análisis de datos",
+        "Investigación"
     ],
-    "author": "Juan Cahuana",
+    "author": "Génesis León",
     "license": "ISC",
     "bugs": {
         "url": "https://gitlab.com/safetypay/safetypay-mexico/issues"
