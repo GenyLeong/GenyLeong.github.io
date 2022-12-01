@@ -37,23 +37,23 @@ var copyfile = function() {
         ],
     };
 
-    // copy("src", "source/", options)
-    //   .then(function (results) {
-    //     console.info("Copied " + results.length + " files");
-    //   })
-    //   .catch(function (error) {
-    //     console.error("Copy failed: " + error);
-    //   });
+    copy("src", "source/", options)
+        .then(function(results) {
+            console.info("Copied " + results.length + " files");
+        })
+        .catch(function(error) {
+            console.error("Copy failed: " + error);
+        });
 
-    // // Index
-    // copy("src", "source/", { filter: ["index.html", "en.html"] })
-    //   .then(function (results) {
-    //     addSourcePath();
-    //     console.info("Copied " + results.length + " files");
-    //   })
-    //   .catch(function (error) {
-    //     console.error("Copy failed: " + error);
-    //   });
+    // Index
+    copy("src", "source/", { filter: ["index.html", "en.html"] })
+        .then(function(results) {
+            // addSourcePath();
+            console.info("Copied " + results.length + " files");
+        })
+        .catch(function(error) {
+            console.error("Copy failed: " + error);
+        });
 
     // var addSourcePath = function () {
     //   // Edit index.html
