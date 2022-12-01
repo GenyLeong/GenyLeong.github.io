@@ -1,7 +1,7 @@
 {
-    "name": "safetypay-mexico",
+    "name": "genyleong.github.io",
     "version": "1.0.0",
-    "description": "Front-End SafetyPay Mexico",
+    "description": "Front-End portfolio",
     "main": "gulpfile.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
