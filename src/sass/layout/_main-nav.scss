@@ -1,11 +1,15 @@
 // Colores del módulo
-$c_linea_gris: #DEDEDE;
+$c_linea_gris: #dedede;
 
+@import "../base/tipografias";
+@import "../base/colores";
+@import "../utils/mixins";
 /*---------------------------------------------------------------------------*
  * MainNav
 ----------------------------------------------------------------------------*/
 .MainNav {
-  &, & * {
+  &,
+  & * {
     box-sizing: border-box;
   }
 
@@ -17,10 +21,10 @@ $c_linea_gris: #DEDEDE;
       padding-left: 20px;
     }
     &:after {
-      clear:both;
+      clear: both;
       font-size: 0;
       height: 0;
-      content: ' ';
+      content: " ";
       display: block;
     }
   }

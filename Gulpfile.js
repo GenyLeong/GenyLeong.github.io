@@ -10,7 +10,7 @@ var gulp = require("gulp"),
   concatCss = require("gulp-concat-css"),
   notify = require("gulp-notify"),
   del = require("del"),
-  sass = require("gulp-sass"),
+  sass = require("gulp-dart-sass"),
   pug = require("gulp-pug"),
   watch = require("gulp-watch"),
   browserSync = require("browser-sync"),
@@ -40,7 +40,7 @@ gulp.task("json", function () {
 // gulp.task('styles', ['cleanCSS'], function() {
 gulp.task("styles", function () {
   gulp
-    .src("./src/sass/app.scss") //lee estos archivos
+    .src("./src/sass/**/*.scss") //lee estos archivos
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
@@ -63,9 +63,9 @@ gulp.task("jshint", function () {
     .pipe(notify({ message: "JSHints task complete" })); // notifcamos al sistema
 });
 
-gulp.task("scripts-prod", ["cleanJS"], function () {
+gulp.task("scripts-prod", ["jshint"], function () {
   gulp
-    .src("./src/js/*")
+    .src("./src/js/*.js")
     .pipe(gulp.dest("./src/js")) // trabajaremos con el archivo de jquery y nuestros js
     .pipe(
       uglify().on("error", function (e) {
@@ -95,7 +95,7 @@ gulp.task("watch", function () {
 
 gulp.task("views", function () {
   return gulp
-    .src(["./src/views/pages/**/*.pug", "!./src/views/pages/pse-message/**/*"])
+    .src(["./src/views/pages/**/*.pug"])
     .pipe(
       pug({
         pretty: true,

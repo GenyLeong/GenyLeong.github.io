@@ -7,6 +7,7 @@ $c_fondo_barras: #4380c6;
 $c_fondo_total: #f6f6f6;
 $c_fondo_tiempo: #e1ebfc;
 
+@import "../base/tipografias";
 // Estilos
 .Ticket,
 .Ticket * {
@@ -170,10 +171,10 @@ $c_fondo_tiempo: #e1ebfc;
 }
 
 .ProcedimientoPago {
-  // float: left;
   clear: both;
-  display: block;
+  display: flex;
   margin-bottom: 3rem;
+  flex-direction: column;
   .GrupoTickets {
     max-width: 640px;
     margin: 2rem auto;
@@ -186,18 +187,16 @@ $c_fondo_tiempo: #e1ebfc;
   p {
     font-family: "Raleway";
     font-size: 15px;
+    line-height: 24px;
+    margin: 4px auto;
   }
-  // .row-left {
-  //   clear: both;
-  //   display: block;
-  //   float: left;
-  // }
-  // .col-right,
-  // .col-left {
-  //   display: block;
-  //   float: none;
-  //   width: 100%;
-  // }
+
+  ul > li {
+    font-family: "Raleway";
+    font-size: 15px;
+    line-height: 24px;
+  }
+
   hr {
     height: 1px;
     width: 100%;
@@ -205,32 +204,57 @@ $c_fondo_tiempo: #e1ebfc;
     border-top: 1px dashed #000;
     margin: 0;
   }
+
+  .title-job {
+    text-decoration: underline;
+    line-height: 22px;
+    font-size: 17px;
+  }
+
+  .row-between {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding: 14px;
+      border: 1px solid #000;
+      display: block;
+      &:hover {
+        background-color: #000;
+        color: #f6f6f6;
+      }
+    }
+  }
+
   .display-mobile {
     display: block;
   }
+
+  .item {
+    margin: 14px 0px;
+  }
+
   @include breakpoint(tablet) {
     .display-mobile {
       display: none;
     }
-    .col-right {
+
+    .col-6 {
       width: 45%;
-      float: right;
-      // clear: both;
     }
-    .col-left {
-      width: 45%;
-      float: left;
+
+    .row-between {
+      justify-content: space-between;
     }
+
     hr {
-      height: 56vh;
+      height: 72vh;
       border: none;
       border-right-width: medium;
       border-right-style: none;
       border-right-color: currentcolor;
       border-right: 1px dashed #000;
       width: 1px;
-      float: right;
-      margin-right: 3rem;
       margin-bottom: 3rem;
     }
   }

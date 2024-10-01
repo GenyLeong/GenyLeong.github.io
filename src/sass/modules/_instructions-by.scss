@@ -2,9 +2,6 @@
  * Start: InstructionsBy
 ----------------------------------------------------------------------------*/
 .InstructionsBy {
-  &, & * {
-    box-sizing: border-box;
-  }
   font-size: 0;
   .IconButton {
     margin-left: 5px;
@@ -13,7 +10,7 @@
       margin-left: 0;
     }
   }
-  &__content  {
+  &__content {
     display: table;
   }
 
@@ -26,6 +23,9 @@
   &__buttons {
     display: table-cell;
     vertical-align: middle;
+  }
+  & {
+    box-sizing: border-box;
   }
 }
 /*---------------------------------------------------------------------------*
