@@ -8,7 +8,7 @@
     "prod": "node prod_scripts.js",
     "zip": "node zip_scripts.js",
     "start": "node server.js",
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
   },
   "resolutions": {
     "graceful-fs": "^4.2.11"
