@@ -1671,6 +1671,7 @@ a[href^=tel] {
   }
   .ProcedimientoPago .row-between {
     justify-content: space-between;
+    flex-direction: row;
   }
   .ProcedimientoPago hr {
     height: 72vh;
